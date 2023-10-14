@@ -1,0 +1,8 @@
+
+.dropdown .menu {
+  display: none;
+}
+
+.dropdown:hover .menu {
+  display: block;
+}
