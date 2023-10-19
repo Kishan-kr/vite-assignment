@@ -22,10 +22,3 @@ Before you get started, make sure you have the following tools and resources:
 
 - Familiarity with React, Tailwind CSS, RESTful APIs, and Git/GitHub.
 - Access to the provided Figma design.
-
-## Getting Started
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/kishan-kr/vite-assignment.git
