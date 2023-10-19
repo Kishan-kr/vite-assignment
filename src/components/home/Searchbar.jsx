@@ -1,21 +1,35 @@
 import React, { useState } from 'react'
 import SearchResult from './SearchResult'
-import userData from '../../data/users.json'
+import Alert from '../Alert';
 
 function Searchbar() {
   const [searchQuery, setSearchQuery] = useState('')
   const [showResult, setShowResult] = useState(false)
   const [searchResults, setSearchResults] = useState([]);
+  const [isAlertActive, setisAlertActive] = useState(true)
 
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Filter the users based on the search query
-    const results = userData.filter((user) =>
-      user.name.toLowerCase().includes(searchQuery.toLowerCase())
-    );
+    const response = await fetch('https://raw.githubusercontent.com/Kishan-kr/vite-assignment/main/src/data/users.json')
+    if(!response.ok) {
+      return <Alert 
+        active={isAlertActive} 
+        setActive={setisAlertActive} 
+        heading={'Server Error'}
+        content={response.error}
+        bgColor='red-200' 
+        textColor='red-600'
+        icon='danger'
+      />
 
+    }
+    const data = await response.json();
+
+    const results = data.filter((user) => (
+      user.name.toLowerCase().includes(searchQuery.toLowerCase())
+    ))
     setSearchResults(results);
     setShowResult(true);
   }

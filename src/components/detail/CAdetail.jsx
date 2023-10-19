@@ -6,7 +6,6 @@ import TaskAndCharges from './TaskAndCharges'
 import Testimonial from './Testimonial'
 import ImageCarousel from './ImageCarousel'
 import About from './About'
-import userData from '../../data/users.json'
 import { useParams } from 'react-router-dom'
 import UserNotFound from '../error/UserNotFound'
 import Loader from '../Loader'
@@ -15,17 +14,33 @@ function CAdetail() {
   const { id } = useParams()
   const [user, setUser] = useState({})
   const [loading, setLoading] = useState(true)
+  const [isAlertActive, setisAlertActive] = useState(true)
 
   // Search for the user with the matching ID
-  const fetchUser = () => {
-    const data = userData.find((user) => user.id === Number(id));
-    console.log(data)
-    setUser(data);
+  const fetchUser = async () => {
+    const response = await fetch('https://raw.githubusercontent.com/Kishan-kr/vite-assignment/main/src/data/users.json')
+    if(!response.ok) {
+      return <Alert 
+        active={isAlertActive} 
+        setActive={setisAlertActive} 
+        heading={'Server Error'}
+        content={response.error}
+        bgColor='red-200' 
+        textColor='red-600'
+        icon='danger'
+      />
+
+    }
+
+    const data = await response.json();
+    const user = data.find((user) => user.id === Number(id));
+    setUser(user);
+    setLoading(false)
   }
 
   useEffect(() => {
     fetchUser();
-    setLoading(false);
+    
   }, [])
 
   if (!user) {
@@ -34,7 +49,7 @@ function CAdetail() {
 
 
   return (
-    <>{loading ? <Loader /> :
+    <>{loading ? <Loader size={12} color='blue-500'/> :
       <div className='bg-background text-lg text-black'>
         <Navbar />
         <div className='flex flex-col gap-12 py-8 px-3 md:flex-row md:px-12 lg:px-24'>

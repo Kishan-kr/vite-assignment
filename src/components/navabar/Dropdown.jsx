@@ -34,7 +34,7 @@ function Dropdown({ dropdownTitle, items }) {
         tabIndex="-1">
         <div className="py-1 flex flex-col" role="none"> {
           items?.map((item) => (
-            <NavItem key={item.path} item={item} />
+            <NavItem key={item.title} item={item} />
           ))
         }
         </div>

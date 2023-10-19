@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 
 function ImageCarousel({ image }) {
+  console.log(image)
   const [activeIndex, setActiveIndex] = useState(0);
 
   const items = [
@@ -25,9 +26,8 @@ function ImageCarousel({ image }) {
 
   try {
     return (
-      <div className=" relative h-64 grow shrink-0 basis-72 bg-cover bg-background rounded-lg p-0">
-        <div style={{ backgroundImage: `url(${image})` }}>
-        </div>
+      <div className=" relative h-64 overflow-hidden grow shrink-0 basis-72 bg-background rounded-lg p-0">
+        <img src={image} width='100%' height='100%' alt="Image" className='absolute h-full w-full inset-0 object-cover'/>
 
         <div className="flex justify-center mt-3 absolute bottom-3 left-1/2 transform -translate-x-1/2">
           {items.map((_, index) => (

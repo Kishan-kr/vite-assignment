@@ -31,7 +31,7 @@ function FeatureSection() {
       <div>
         <div className='flex justify-end text-right'>
           <div className='flex flex-col items-end'>
-            <ChatBubble text='Hey, check out loreumipsum services.' bg='purple-200' dir='ee' />
+            <ChatBubble text='Hey, check out loreumipsum services.' bg={'purple-200'} dir={'ee'}/>
             <ChatBubble text='I learned from their videos, got my first job.' bg='purple-200' dir='ee' />
             <ChatBubble text="You won't be disappointed with their services." bg='purple-200' dir='ee' />
 

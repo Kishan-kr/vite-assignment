@@ -2,7 +2,7 @@
 import React from 'react';
 import { RouterProvider } from "react-router-dom";
 import routerObject from './utilities/routerObject';
-import './app.css'
+import './App.css'
 
 function App() {
   const router = routerObject();

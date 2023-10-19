@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Michael Jackson",
-    "image": "https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?fit=crop&w=800&q=80",
+    "image": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?auto=format&fit=crop&q=80&w=800",
     "intro": "Expertise in accounting and finance, specializing in financial statements and auditing.",
     "rating": 4.8,
     "reviewCount": 89,
@@ -25,7 +25,7 @@
   {
     "id": 2,
     "name": "Lucy Brown",
-    "image": "https://images.unsplash.com/photo-1556746818-17b142980bb2?fit=crop&w=800&q=80",
+    "image": "https://images.unsplash.com/photo-1480455624313-e29b44bbfde1?auto=format&fit=crop&q=80&w=800",
     "intro": "Dedicated accountant with expertise in taxation and corporate finance.",
     "rating": 4.5,
     "reviewCount": 75,
@@ -48,7 +48,7 @@
   {
     "id": 3,
     "name": "Robert Smith",
-    "image": "https://images.unsplash.com/photo-1517433456452-f9633a875fbc?fit=crop&w=800&q=80",
+    "image": "https://images.unsplash.com/photo-1476657680631-c07285ff2581?auto=format&fit=crop&q=80&w=800",
     "intro": "Experienced in overseeing financial management of medium to large enterprises.",
     "rating": 4.6,
     "reviewCount": 65,
@@ -78,7 +78,7 @@
   {
     "id": 4,
     "name": "Anita Patel",
-    "image": "https://images.unsplash.com/photo-1563990112129-a9a72c04f5d7?fit=crop&w=800&q=80",
+    "image": "https://images.unsplash.com/photo-1499952127939-9bbf5af6c51c?auto=format&fit=crop&q=80&w=800",
     "intro": "Passionate about helping startups navigate the complexities of financial compliance.",
     "rating": 4.9,
     "reviewCount": 95,
@@ -101,7 +101,7 @@
   {
     "id": 5,
     "name": "Johnathan Lee",
-    "image": "https://images.unsplash.com/photo-1556157382-97eda2d62296?fit=crop&w=800&q=80",
+    "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=800",
     "intro": "Expert in streamlining business operations with financial acumen.",
     "rating": 4.5,
     "reviewCount": 72,
@@ -128,7 +128,7 @@
   {
     "id": 6,
     "name": "Sophia Fernandez",
-    "image": "https://images.unsplash.com/photo-1581091226825-c6a89e7e4801?fit=crop&w=800&q=80",
+    "image": "https://images.unsplash.com/photo-1535965128466-31ce8adc78ea?auto=format&fit=crop&q=80&w=800",
     "intro": "Champion in guiding SMEs through their financial journeys with transparency and integrity.",
     "rating": 4.8,
     "reviewCount": 88,
@@ -151,7 +151,7 @@
   {
     "id": 7,
     "name": "William O'Connell",
-    "image": "https://images.unsplash.com/photo-1542751371-6533d14d705f?fit=crop&w=800&q=80",
+    "image": "https://images.unsplash.com/photo-1557862921-37829c790f19?auto=format&fit=crop&q=80&w=800",
     "intro": "Master of tax strategy and international finance regulations.",
     "rating": 4.6,
     "reviewCount": 78,
@@ -178,7 +178,7 @@
   {
     "id": 8,
     "name": "Nina Johansson",
-    "image": "https://images.unsplash.com/photo-1587620962725-abab7fe55159?fit=crop&w=800&q=80",
+    "image": "https://images.unsplash.com/photo-1525875975471-999f65706a10?auto=format&fit=crop&q=80&w=800",
     "intro": "Specializes in financial forensics and fraud examination.",
     "rating": 4.9,
     "reviewCount": 92,
@@ -205,7 +205,7 @@
   {
     "id": 9,
     "name": "Oliver Bernard",
-    "image": "https://images.unsplash.com/photo-1579637305941-57a5d3807b1d?fit=crop&w=800&q=80",
+    "image": "https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?auto=format&fit=crop&q=80&w=800",
     "intro": "Dedicated to empowering non-profits with financial strategies and sustainability.",
     "rating": 4.7,
     "reviewCount": 85,
@@ -232,7 +232,7 @@
   {
     "id": 10,
     "name": "Isabella Martinez",
-    "image": "https://images.unsplash.com/photo-1588392382834-a891154bca4d?fit=crop&w=800&q=80",
+    "image": "https://images.unsplash.com/photo-1507426946714-15f08a43d39e?auto=format&fit=crop&q=80&w=800",
     "intro": "Expert in mergers, acquisitions, and corporate restructuring with a decade of experience.",
     "rating": 4.8,
     "reviewCount": 90,
